@@ -1,0 +1,57 @@
+main{
+    background-color: $main-color;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    .tour1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 1.5rem;
+        margin: 10px;
+        h1{
+            color: white;
+            font-size: 1.5rem;
+        }
+    }
+    .tour2{
+        color: $text-color;
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .musica-tour{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .tickets1{
+        padding: 30px;
+    }
+    .tour2 h3{
+       padding: 10px;
+       font-size: 1.3rem;
+    }
+    .tickets1 a{
+        justify-content: center;
+        display: flex;
+    }
+    .tickets1 a button{
+        justify-content: center;
+        font-size: medium;
+        font-weight: 700;
+        text-decoration: none;
+        width: 100px;
+        height: 30px;
+    }
+    main h1 {
+        color: $text-color;
+    }
+    h3{
+        color: $text-color;
+    }
+}

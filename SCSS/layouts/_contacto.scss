@@ -1,0 +1,101 @@
+main{
+    background-color: $main-color;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    .seccion-contacto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .titulos5{
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    .musica5{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+        height:100%;
+        width:100% ;
+        justify-content: space-around;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 25%;
+    }
+    form div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    label{
+        display: flex;
+        margin-bottom: 5px;
+    }
+    input,textarea{
+        display: flex;
+        width: 50%;
+        padding: 10px;
+        resize: none;
+    }
+    .contacto2{
+      display: flex;
+      flex-wrap: wrap;
+      width: 10%;
+      flex-direction: column-reverse;
+      margin: 5px;
+      margin-left: 20%;
+    }
+    .contacto3{
+        display: flex;
+      flex-wrap: wrap;
+      width: 10%;
+      flex-direction: column-reverse;
+      margin: 5px;
+      margin-left: 20%;
+    }
+    main h1 {
+        color: $text-color;
+        font-size: 1.5rem;
+    }
+    h3{
+        color: $text-color;
+        font-size: 1.5rem;
+    }
+    .contacto1{
+        margin: 10px;
+        h3{
+            font-size: 1rem;
+        }
+    }
+}
+@media (max-width: 772px) {
+    .musica5{
+        height: 650px;
+    }
+    .titulos5{
+        justify-content: center;
+    }
+    .seccion-contacto div textarea{
+        width: 100%;
+    }
+    .seccion-contacto div input{
+        width: 100%;
+    }
+    main .contacto2{
+        margin-left: 42%;
+        width: 100px;
+    }
+    main .contacto3{
+        margin-left: 42%;
+        width: 100px;
+    }
+}

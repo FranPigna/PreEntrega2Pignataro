@@ -1,327 +1,445 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
-header{
-    background-color: gray;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    height: 50px;
-}
-main{
-    background-color: black;
-    padding: 5px;
-  position: relative;
-    bottom: 0;
-}
-footer{
-    background-color: gray;
-    padding: 5px;
-    bottom: 0;
-    width: 100%;
-}
-header div a img{
-    height: 40px;
-    display: flex;
-}
-footer{
-    background-color:grey;
-    position: relative;
-    padding: 5px;
-    bottom: 0;
-    width: 100%;
-}
-footer p {
-    text-align: center;
-    height: 20%;
-}
-nav{
-    display: flex;
-    height: 9%;
-}
-nav ul li a{
-    text-decoration: none;
-    color:black;
-    padding: 10px;
-    display: block;
-    padding-right: 30px;
-}
-nav ul li a:hover{
-    color:white;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-.segunda-clase p{
-    color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
+header {
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 50px;
 }
-.musica1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+header nav div a img {
+  height: 40px;
+  display: flex;
 }
-main section article img{
-    height: 70%;
-    width: 40%;
-    display: flex;
-    object-fit: cover;
-    left: 15%;
-    float: left;
-    display: flex;
+header nav {
+  display: flex;
+  height: 10%;
 }
-main h1 {
-    color: aliceblue;
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+  padding-right: 30px;
 }
-h2{
-    color: aliceblue;
+header nav ul li a:hover {
+  color: white;
 }
-h3{
-    color: aliceblue;
+
+@media (max-width: 772px) {
+  header div a img {
+    height: 25px;
+  }
+  nav {
+    height: 9%;
+  }
 }
-.exitos1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height:100%;
-    width:100% ;
+footer {
+  background-color: grey;
+  position: relative;
+  padding: 5px;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+  text-align: center;
+  height: 20%;
 }
-.album1{
-    width: 200px;
+
+main {
+  background-color: black;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
+  min-height: 100vh;
+}
+main .musica1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+main .segunda-clase {
+  color: aliceblue;
+  display: flex;
+  flex-wrap: wrap;
+  width: 55%;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+main section article img {
+  height: 70%;
+  width: 40%;
+  display: flex;
+  object-fit: cover;
+  left: 15%;
+  float: left;
+  display: flex;
+}
+main .segunda-clase h1 {
+  font-size: 1rem;
+}
+
+@media (max-width: 772px) {
+  main section article img {
     height: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.album1:hover{
-    height: 220px;
-    width: 220px;
-    transition: 0.5s;
-}
-.album2{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.album2:hover{
-    height: 220px;
-    width: 220px;
-    transition: 0.5s;
-}
-.album3{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 20px;
-}
-.album3:hover{
-    height: 220px;
-    width: 220px;
-    transition: 0.5s;
-}
-.album1-1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.album2-1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.album3-1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.titulos1{
-    margin: 20px;
-    display: flex;
-}
-.musica1{
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    height:100%;
-    width:100% ;
-    justify-content: space-around;
-}
-.disco1{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.disco1:hover{
-    height: 220px;
-    width: 220px;
-    transition: 0.5s;
-}
-.disco2{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.disco2:hover{
-    height: 220px;
-    width: 220px;
-    transition: 0.5s;
-}
-.disco3{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.disco3:hover{
-    height: 220px;
-    width: 220px;
-    transition: 0.5s;
-}
-.disco1-1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.disco2-1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.disco3-1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-.titulos2{
-    margin: 20px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.tour1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.tour2{
-    color: aliceblue;
-    text-align: center;
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-.musica-tour{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-.tickets1{
-    padding: 30px;
-}
-.tour2 h3{
-   padding: 10px;
-}
-.tickets1 a{
-    justify-content: center;
-    display: flex;
-}
-.tickets1 a button{
-    justify-content: center;
-    font-size: medium;
-    font-weight: 700;
-    text-decoration: none;
-    width: 100px;
-    height: 30px;
-}
-.seccion-contacto{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.titulos5{
-    height: 40px;
-    display: flex;
-}
-.musica5{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 20px;
-    height:100%;
-    width:100% ;
-    justify-content: space-around;
-}
-form{
-    display: flex;
-    flex-direction: column;
+    width: 150px;
+    margin-left: 10%;
+  }
+  .segunda-clase {
     width: 100%;
-    gap: 25%;
+    font-size: 13px;
+    margin-left: 40%;
+  }
 }
-form div{
+@media (max-width: 530px) {
+  main section article img {
+    height: 200px;
+    width: 150px;
+    margin-left: 30%;
+  }
+  main .segunda-clase {
+    width: 80%;
+  }
+  .segunda-clase {
+    font-size: 13px;
+    margin-left: 10%;
+  }
+  .musica1 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
 }
-label{
-    display: flex;
-    margin-bottom: 5px;
+main {
+  background-color: black;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
 }
-input,textarea{
-    display: flex;
-    width: 50%;
-    padding: 10px;
-    resize: none;
+main .titulos2 {
+  margin: 10px;
+  display: flex;
+  font-size: 1.5rem;
+  flex-wrap: wrap;
+  color: aliceblue;
 }
-.contacto2{
+main .disco1 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+main .disco1:hover {
+  height: 220px;
+  width: 220px;
+  transition: 0.5s;
+}
+main .disco2 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+main .disco2:hover {
+  height: 220px;
+  width: 220px;
+  transition: 0.5s;
+}
+main .disco3 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+main .disco3:hover {
+  height: 220px;
+  width: 220px;
+  transition: 0.5s;
+}
+main .disco1-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+main .disco2-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+main .disco3-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+main main h1 {
+  color: aliceblue;
+}
+main h2 {
+  color: aliceblue;
+}
+
+.musica1 article div h2 {
+  font-size: 1.5rem;
+}
+
+main {
+  background-color: black;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
+}
+main .seccion-contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main .titulos5 {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+main .musica5 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  justify-content: space-around;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25%;
+}
+main form div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+main label {
+  display: flex;
+  margin-bottom: 5px;
+}
+main input, main textarea {
+  display: flex;
+  width: 50%;
+  padding: 10px;
+  resize: none;
+}
+main .contacto2 {
   display: flex;
   flex-wrap: wrap;
   width: 10%;
   flex-direction: column-reverse;
+  margin: 5px;
+  margin-left: 20%;
 }
+main .contacto3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10%;
+  flex-direction: column-reverse;
+  margin: 5px;
+  margin-left: 20%;
+}
+main main h1 {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+main h3 {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+main .contacto1 {
+  margin: 10px;
+}
+main .contacto1 h3 {
+  font-size: 1rem;
+}
+
 @media (max-width: 772px) {
-    input,textarea{
-        width: 100%;
-    }
-    .musica5{
-        height: 650px;
-        display: flex;
-    }
-    .titulos5{
-        justify-content: center;
-    }
-    main section article img{
-        height: 50%;
-        width: 50%;
-    }
-    header div a img{
-        height: 25px;
-    }
-    nav{
-        height: 9%;
-    }
+  .musica5 {
+    height: 650px;
+  }
+  .titulos5 {
+    justify-content: center;
+  }
+  .seccion-contacto div textarea {
+    width: 100%;
+  }
+  .seccion-contacto div input {
+    width: 100%;
+  }
+  main .contacto2 {
+    margin-left: 42%;
+    width: 100px;
+  }
+  main .contacto3 {
+    margin-left: 42%;
+    width: 100px;
+  }
 }
+main {
+  background-color: black;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
+}
+main .exitos1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+main .album1 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+main .album1:hover {
+  height: 220px;
+  width: 220px;
+  transition: 0.5s;
+}
+main .album2 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+main .album2:hover {
+  height: 220px;
+  width: 220px;
+  transition: 0.5s;
+}
+main .album3 {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 20px;
+}
+main .album3:hover {
+  height: 220px;
+  width: 220px;
+  transition: 0.5s;
+}
+main .album1-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+main .album2-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+main .album3-1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+main main h1 {
+  color: aliceblue;
+}
+main h2 {
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+main .titulos1 {
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+main {
+  background-color: black;
+  padding: 5px;
+  position: relative;
+  bottom: 0;
+}
+main .tour1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+main .tour1 h1 {
+  color: white;
+  font-size: 1.5rem;
+}
+main .tour2 {
+  color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+main .musica-tour {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+main .tickets1 {
+  padding: 30px;
+}
+main .tour2 h3 {
+  padding: 10px;
+  font-size: 1.3rem;
+}
+main .tickets1 a {
+  justify-content: center;
+  display: flex;
+}
+main .tickets1 a button {
+  justify-content: center;
+  font-size: medium;
+  font-weight: 700;
+  text-decoration: none;
+  width: 100px;
+  height: 30px;
+}
+main main h1 {
+  color: aliceblue;
+}
+main h3 {
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=style.css.map */

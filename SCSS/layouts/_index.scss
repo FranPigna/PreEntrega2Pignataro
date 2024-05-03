@@ -1,0 +1,67 @@
+main{
+    background-color: $main-color;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    min-height: 100vh;
+    .musica1{
+        display: flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        height:100%;
+        width:100% ;
+        justify-content: space-around;
+    }
+    .segunda-clase{
+        color: $text-color;
+        display: flex;
+        flex-wrap: wrap;
+        width: 55%;
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+    section article img{
+        height: 70%;
+        width: 40%;
+        display: flex;
+        object-fit: cover;
+        left: 15%;
+        float: left;
+        display: flex;
+    }
+    .segunda-clase h1{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 772px) {
+    main section article img{
+        height: 200px;
+        width: 150px;
+        margin-left: 10%;
+    }
+    .segunda-clase{
+        width: 100%;
+        font-size: 13px;
+        margin-left: 40%;
+    }
+}
+@media (max-width: 530px) {
+    main section article img{
+        height: 200px;
+        width: 150px;
+        margin-left: 30%;
+
+    }
+    main .segunda-clase{
+        width: 80%;
+    }
+    .segunda-clase{
+        font-size: 13px;
+        margin-left: 10%;
+    }
+    .musica1{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}

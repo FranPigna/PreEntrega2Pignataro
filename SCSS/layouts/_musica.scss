@@ -1,0 +1,83 @@
+main{
+    background-color: $main-color;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+    .exitos1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height:100%;
+        width:100% ;
+    }
+    .album1{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .album1:hover{
+        height: 220px;
+        width: 220px;
+        transition: 0.5s;
+    }
+    .album2{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .album2:hover{
+        height: 220px;
+        width: 220px;
+        transition: 0.5s;
+    }
+    .album3{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 20px;
+    }
+    .album3:hover{
+        height: 220px;
+        width: 220px;
+        transition: 0.5s;
+    }
+    .album1-1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+    .album2-1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+    .album3-1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 5px;
+    }
+    main h1 {
+        color: $text-color;
+    }
+    h2{
+        color: $text-color;
+        font-size: 1.5rem;
+    }
+    .titulos1{
+        color:$text-color;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+}
